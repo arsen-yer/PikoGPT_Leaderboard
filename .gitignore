@@ -1,4 +1,8 @@
 .venv
+.venv/
+__pycache__/
+*.pyc
+Results/
 
 .DS_Store
 
@@ -8,3 +12,5 @@ leaderboard/benchmarks_hidden
 # Hidden model baseline
 Submissions/PikoGPT_Baseline_GH_hiddien
 Results/PikoGPT_Baseline_GH_hiddien
+
+Submissions/DropOuters/model/*.pt
