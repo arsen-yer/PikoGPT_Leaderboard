@@ -1,0 +1,153 @@
+{
+  "benchmark": "lambada",
+  "submission": "DropOuters_AltynOrda",
+  "checkpoint": "/Users/retr0/University/NLP/PikoGPT_Leaderboard/Submissions/DropOuters_AltynOrda/model/best_model.pt",
+  "data": "leaderboard/benchmarks/lambada/cleaned/test.jsonl",
+  "limit": 100,
+  "total": 100,
+  "correct": 0,
+  "invalid": 0,
+  "accuracy_pct": 0.0,
+  "wrong_examples": [
+    {
+      "id": "lambada_test_sha1_661767b14de562ef",
+      "gold": "signs",
+      "pred": "",
+      "prompt": "In my palm is a clear stone, and inside it is a small ivory statuette. A guardian angel.\n\n\"Figured if you're going to be out at night getting hit by cars, you might as well have some backup.\"\n\nI look at him, feeling stunned. Like this is some sort of sign. But as I stare at Harlin, his mouth curved in a confident grin, I don't care about ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_b750316312de1536",
+      "gold": "Shane",
+      "pred": "",
+      "prompt": "Give me a minute to change and I'll meet you at the docks.\" She'd forced those words through her teeth.\n\n\"No need to change. We won't be that long.\"\n\nShane gripped her arm and started leading her to the dock.\n\n\"I can make it there on my own, ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_5977b7d3340a5a9d",
+      "gold": "insurance",
+      "pred": "",
+      "prompt": "\"Only one source I know of that would be likely to cough up enough money to finance a phony sleep research facility and pay people big bucks to solve crimes in their dreams,\" Farrell concluded dryly.\n\n\"What can I say?\" Ellis unfolded his arms and widened his hands. \"Your tax dollars at work.\"\n\nBefore Farrell could respond, Leila's voice rose from inside the house.\n\n\"No insurance?\" she wailed. \"What do you mean you don't have any ",
+      "raw_generation": ","
+    },
+    {
+      "id": "lambada_test_sha1_150cc387aeaf1fbe",
+      "gold": "Helen",
+      "pred": "was",
+      "prompt": "Helen's heart broke a little in the face of Miss Mabel's selfless courage. She thought that because she was old, her life was of less value than the others'. For all Helen knew, Miss Mabel had a lot more years to live than she did. \"Not going to happen,\" replied ",
+      "raw_generation": " was"
+    },
+    {
+      "id": "lambada_test_sha1_5755c67252f82aff",
+      "gold": "chains",
+      "pred": "and",
+      "prompt": "Preston had been the last person to wear those chains, and I knew what I'd see and feel if they were slipped onto my skin-the Reaper's unending hatred of me. I'd felt enough of that emotion already in the amphitheater. I didn't want to feel anymore.\n\n\"Don't put those on me,\" I whispered. \"Please.\"\n\nSergei looked at me, surprised by my low, raspy please, but he put down the ",
+      "raw_generation": " and"
+    },
+    {
+      "id": "lambada_test_sha1_777ea1edbb744305",
+      "gold": "Hastin",
+      "pred": "",
+      "prompt": "She knew that Basha was a decent young man, that he was pretty sweet and friendly with her. Jawen knew they had a bit of a history, but she thought that this time she would get along better with him, that she could overlook those problems.\nThey kissed, and she knew that she liked Basha, but then Hastin interfered. She was so angry that she immediately said, once they were out of earshot of Basha, “You don’t mean anything to me anymore, ",
+      "raw_generation": ")."
+    },
+    {
+      "id": "lambada_test_sha1_b582dc35554b2793",
+      "gold": "Queen",
+      "pred": "",
+      "prompt": "He heard Rhinna speak “The Queen wants you in her carriage.”\nTom spoke “No, I’m not going in some asylum.”\nRan was seen standing next to him spoke “It’s just for a private talk with you that’s all.”\nTom groaned and went inside the carriage to sit down next to the ",
+      "raw_generation": " )"
+    },
+    {
+      "id": "lambada_test_sha1_cf6bb47f6c22f231",
+      "gold": "Aidan",
+      "pred": "",
+      "prompt": "There was no way he would come here on his own.\nHe ordered a cup of coffee, and then we just sat in silence.\n“So,” Aidan finally said, “How’s it going?”\nI laughed. “Not much has changed since the last time I saw you.”\n“Ya know, you eat here a lot,” said ",
+      "raw_generation": ","
+    },
+    {
+      "id": "lambada_test_sha1_0765ddf78ca66b8c",
+      "gold": "Gabriel",
+      "pred": "",
+      "prompt": "“Why?”\n“I would have thought you’d find him rather dry,” she said.\n“I don’t know about that,” said Gabriel.\n“He was a great craftsman,” said Heather.\n“That he was,” said Flannery.\n“And Polish, to boot,” said ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_780040596f14298d",
+      "gold": "coffee",
+      "pred": "and",
+      "prompt": "Both its sun-speckled shade and the cool grass beneath were a welcome respite after the stifling kitchen, and I was glad to relax against the tree’s rough, brittle bark and begin my breakfast of buttery, toasted bread and fresh fruit. Even the water was tasty, it was so clean and cold. It almost made up for the lack of ",
+      "raw_generation": " and"
+    },
+    {
+      "id": "lambada_test_sha1_8117d3ca994b411d",
+      "gold": "fights",
+      "pred": "continued",
+      "prompt": "Escorting drunk humans out of the bar is different from going up against a tiger-wildcat who eats raw steak for breakfast and is dying for a fight.\"\n\n\"I bet he could win with just his breath,\" Ronan said. Sean chuckled.\n\n\"Take it seriously, Ronan. These guys are seasoned. If Marquez has a champion, it means he's won a good share of the ",
+      "raw_generation": " continued"
+    },
+    {
+      "id": "lambada_test_sha1_dae3a616cc518a30",
+      "gold": "story",
+      "pred": "",
+      "prompt": "Instead, I stare straight ahead like I'm deeply interested in what's going on at the front of the room.\n\nEventually, we make it through to the part where everyone stands up and says their little piece. Some have a longer, more in depth story to tell, which terrifies me. I don't want anyone to ask me for my ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_3d5da9a83c6118c5",
+      "gold": "border",
+      "pred": "oles",
+      "prompt": "Recall our encounter with the warbirds at the Federation border. Confirm my memory with yours.”\nShe turned Seren to face her. They placed their foreheads together as when they meditated together. They held hands beneath the surface of the water. They closed their eyes.\n“There were five warbirds at the ",
+      "raw_generation": "oles"
+    },
+    {
+      "id": "lambada_test_sha1_43c284e808af7ef0",
+      "gold": "introductions",
+      "pred": "",
+      "prompt": "I was so happy to see him that I almost sobbed his name.\nEli stiffened and let out a hiss. “Mohiri!” Fear crept into his voice, and my dazed mind wondered what on earth scared a vampire.\nNikolas chuckled, and I felt a tremor run through my captor. “I see there is no need for ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_80c43c70685398c7",
+      "gold": "babies",
+      "pred": "",
+      "prompt": "\"Come on, baby girl,\" Mary Jo said, scooping up the toy, then bending to retrieve her daughter. \"Let me change your diaper and put you down for a couple of hours.\"\n\n\"She sleeps that long?\"\n\n\"Almost every afternoon. She still takes a morning nap, too, but she'll outgrow those pretty soon.\"\n\nLori knew she had a lot to learn about ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_da02471be28d4706",
+      "gold": "together",
+      "pred": "",
+      "prompt": "I would really like to have some time with my mom.\"\n\nLucien groaned inwardly. How could he say no to that? Julia was grieving for her mate and at a loss on how to deal with her daughter. Now Jaeden actually wanted to speak to her mom... he would be an ogre if he said no. He gave a quick nod and ignored the grateful smile she threw him before her and her mother ambled out of the room ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_2de548239c0c900d",
+      "gold": "robot",
+      "pred": "inner",
+      "prompt": "If Demerzel has the ability to change minds, he has to do so without bringing about side effects he does not wish-and since he is the Emperor's First Minister, the side effects he must worry about are numerous, indeed.\"\n\n\"And the application to the present case?\"\n\n\"Think about it! You can't tell anyone-except me, of course-that Demerzel is a robot, because he has adjusted you so that you can't. But how much adjustment did that take? Do you want to tell people that he is a ",
+      "raw_generation": "inner"
+    },
+    {
+      "id": "lambada_test_sha1_ddc09e10b2a9653b",
+      "gold": "Chester",
+      "pred": "",
+      "prompt": "I leaned out the window and pointed at Floyd’s hearing aid.\nFloyd dug the hearing aid out of his ear and made an adjustment. “Sorry,” he said, screwing it back in. “Blasted thing was turned off.”\n“What happened to Chester?”\n“Shot in the head’s what happened to ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_038c67bf3f968933",
+      "gold": "book",
+      "pred": "",
+      "prompt": "‘Well I don’t know why, Nellie showed it to me many times. It has heaps of her poems and short stories in it; mostly girlie stuff though, which is why she obviously didn’t bother showing you. Strange that she left it to you though, I can’t imagine you would enjoy it very much.\n‘Are you sure it is the same ",
+      "raw_generation": " "
+    },
+    {
+      "id": "lambada_test_sha1_fe3b42c46ba6c57b",
+      "gold": "Izzy",
+      "pred": "",
+      "prompt": "\"We'll wait for you, Daddy,\" Izzy said, snuggling up to Annie.\n\nNick pressed the book into Izzy's hands and hurried out of the room. He came back a few minutes later, looking solemn.\n\nAnnie felt a prickling of fear. She sat up straighter, leaning forward. \"Nick?\"\n\nHe eased back into the bed, on the other side of ",
+      "raw_generation": "."
+    }
+  ]
+}
