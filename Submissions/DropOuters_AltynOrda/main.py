@@ -211,19 +211,22 @@ def load_tokenizer():
     return GPT2TokenizerFast.from_pretrained("gpt2")
 
 
-def parse_mc_prompt(prompt: str) -> tuple[Optional[str], Optional[dict[str, str]]]:
+def parse_mc_prompt(prompt: str) -> tuple[Optional[str], Optional[str], Optional[dict[str, str]]]:
     if "Answer:" not in prompt:
-        return None, None
+        return None, None, None
     option_re = re.compile(r"\n([A-D])\) (.+?)(?=\n[A-D]\) |\nAnswer:)", re.DOTALL)
     options: dict[str, str] = {m.group(1): m.group(2).strip() for m in option_re.finditer(prompt)}
     if not options:
-        return None, None
+        return None, None, None
     first_letter = sorted(options.keys())[0]
     context = prompt[:prompt.index(f"\n{first_letter}) ")].strip()
     context = re.sub(r"^(Context|Question):\s*", "", context)
+    suffix = ""
     if "_" in context:
-        context = context[:context.index("_")].rstrip()
-    return context, options
+        before, after = context.split("_", 1)
+        context = before.rstrip()
+        suffix = after
+    return context, suffix, options
 
 
 def avg_logprob_of_continuation(model: DropOutersLM, prefix_ids: list[int], cont_ids: list[int], ctx: int, device: torch.device) -> float:
@@ -239,6 +242,57 @@ def avg_logprob_of_continuation(model: DropOutersLM, prefix_ids: list[int], cont
             lp = F.log_softmax(logits, dim=-1)
         total += float(lp[tok].item())
     return total / len(cont_ids)
+
+
+def generate_greedy_ids(
+    model: DropOutersLM,
+    prompt_ids: list[int],
+    max_new_tokens: int,
+    ctx: int,
+    device: torch.device,
+    eos_token_id: Optional[int],
+) -> list[int]:
+    generated = list(prompt_ids)
+    new_ids: list[int] = []
+    for _ in range(max_new_tokens):
+        window = generated[-ctx:]
+        input_ids = torch.tensor([window], dtype=torch.long, device=device)
+        attention_mask = torch.ones_like(input_ids)
+        with torch.no_grad():
+            logits = forward_logits(model, input_ids, attention_mask)
+            next_id = int(logits[0, -1, :].argmax().item())
+        generated.append(next_id)
+        new_ids.append(next_id)
+        if eos_token_id is not None and next_id == int(eos_token_id):
+            break
+    return new_ids
+
+
+def first_real_word(text: str) -> str:
+    match = re.search(r"[A-Za-z]+(?:['-][A-Za-z]+)?", text)
+    return match.group(0) if match else ""
+
+
+def best_alpha_next_token(
+    model: DropOutersLM,
+    tokenizer,
+    prompt_ids: list[int],
+    ctx: int,
+    device: torch.device,
+    top_k: int = 512,
+) -> str:
+    window = prompt_ids[-ctx:]
+    input_ids = torch.tensor([window], dtype=torch.long, device=device)
+    attention_mask = torch.ones_like(input_ids)
+    with torch.no_grad():
+        logits = forward_logits(model, input_ids, attention_mask)[0, -1, :]
+        k = min(top_k, logits.numel())
+        indices = torch.topk(logits, k=k).indices.tolist()
+    for token_id in indices:
+        word = first_real_word(decode_ids(tokenizer, [int(token_id)]))
+        if word:
+            return word
+    return ""
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -268,14 +322,15 @@ def main() -> int:
     model = load_checkpoint(ckpt, device)
     tokenizer = load_tokenizer()
 
-    context, options = parse_mc_prompt(args.prompt)
+    context, suffix, options = parse_mc_prompt(args.prompt)
     if context is not None and options:
         prefix = ALPACA_PREFIX.format(context=context)
         prefix_ids = encode_text(tokenizer, prefix)
         best_letter = None
         best_score = float("-inf")
         for letter, text in options.items():
-            option_ids = encode_text(tokenizer, text)
+            continuation = (text + (suffix or "")).strip()
+            option_ids = encode_text(tokenizer, continuation)
             score = avg_logprob_of_continuation(model, prefix_ids, option_ids, model.cfg.max_length, device)
             if score > best_score:
                 best_score = score
@@ -285,12 +340,17 @@ def main() -> int:
         prompt_ids = encode_text(tokenizer, args.prompt)
         if not prompt_ids:
             prompt_ids = [tokenizer.eos_token_id]
-        window = prompt_ids[-model.cfg.max_length :]
-        input_ids = torch.tensor([window], dtype=torch.long, device=device)
-        attn = torch.ones_like(input_ids)
-        logits = forward_logits(model, input_ids, attn)
-        next_id = int(logits[0, -1, :].argmax().item())
-        out = decode_ids(tokenizer, [next_id])
+        new_ids = generate_greedy_ids(
+            model=model,
+            prompt_ids=prompt_ids,
+            max_new_tokens=args.max_tokens,
+            ctx=model.cfg.max_length,
+            device=device,
+            eos_token_id=getattr(tokenizer, "eos_token_id", None),
+        )
+        out = first_real_word(decode_ids(tokenizer, new_ids))
+        if not out:
+            out = best_alpha_next_token(model, tokenizer, prompt_ids, model.cfg.max_length, device)
 
     if args.leaderboard:
         print(out, end="")

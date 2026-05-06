@@ -5,37 +5,30 @@
   "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
   "limit": 100,
   "total": 100,
-  "correct": 21,
+  "correct": 23,
   "invalid": 0,
-  "accuracy_pct": 21.0,
+  "accuracy_pct": 23.0,
   "wrong_examples": [
     {
       "id": "openbookqa_val_8-376",
       "gold": "A",
-      "pred": "B",
+      "pred": "C",
       "prompt": "Question: Frilled sharks and angler fish live far beneath the surface of the ocean, which is why they are known as\nA) Deep sea animals\nB) fish\nC) Long Sea Fish\nD) Far Sea Animals\nAnswer:",
-      "raw_generation": "B"
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_7-57",
+      "gold": "D",
+      "pred": "C",
+      "prompt": "Question: Gas can fill any container it is given, and liquid\nA) is standard weight and size\nB) is the opposite of variable\nC) only needs a few\nD) uses what it needs\nAnswer:",
+      "raw_generation": "C"
     },
     {
       "id": "openbookqa_val_7-1024",
       "gold": "A",
-      "pred": "D",
+      "pred": "B",
       "prompt": "Question: When birds migrate south for the winter, they do it because\nA) they are genetically called to\nB) their children ask for them to\nC) it is important to their happiness\nD) they decide to each year\nAnswer:",
-      "raw_generation": "D"
-    },
-    {
-      "id": "openbookqa_val_959",
-      "gold": "D",
-      "pred": "C",
-      "prompt": "Question: If a person walks in the opposite direction of a compass arrow they are walking\nA) west\nB) north\nC) east\nD) south\nAnswer:",
-      "raw_generation": "C"
-    },
-    {
-      "id": "openbookqa_val_9-241",
-      "gold": "D",
-      "pred": "A",
-      "prompt": "Question: An example of lots kinetic energy would be\nA) Drinking a cold glass of water\nB) A snail moving across the sidewalk\nC) sitting without moving anywhere\nD) An aircraft taking a trip\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_1953",
@@ -47,23 +40,16 @@
     {
       "id": "openbookqa_val_7-97",
       "gold": "A",
-      "pred": "C",
+      "pred": "B",
       "prompt": "Question: A person can grow cabbage in January with the help of what product?\nA) Green house\nB) Parliment\nC) Congress\nD) White house\nAnswer:",
-      "raw_generation": "C"
-    },
-    {
-      "id": "openbookqa_val_8-422",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Question: A frog, in winter, will burrow itself into soft mud, until it freezes, then in the spring\nA) it melts, because it is warm-blooded\nB) it unfreezes, because it is cold-blooded\nC) it remains frozen until it dies\nD) it dies, because it is warm-blooded\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_142",
       "gold": "D",
-      "pred": "C",
+      "pred": "B",
       "prompt": "Question: Which describes the size of an object?\nA) It attracts all metals\nB) It is a sphere\nC) It is red and purple\nD) It holds 500 mL of water\nAnswer:",
-      "raw_generation": "C"
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_7-921",
@@ -75,9 +61,9 @@
     {
       "id": "openbookqa_val_8-22",
       "gold": "B",
-      "pred": "D",
+      "pred": "C",
       "prompt": "Question: If a person enjoys long, sunny days their favorite month would be\nA) October\nB) July\nC) April\nD) March\nAnswer:",
-      "raw_generation": "D"
+      "raw_generation": "C"
     },
     {
       "id": "openbookqa_val_9-1039",
@@ -89,9 +75,9 @@
     {
       "id": "openbookqa_val_739",
       "gold": "C",
-      "pred": "D",
+      "pred": "A",
       "prompt": "Question: An animal can hunt by cracking open a\nA) claw\nB) house\nC) shell\nD) bone\nAnswer:",
-      "raw_generation": "D"
+      "raw_generation": "A"
     },
     {
       "id": "openbookqa_val_7-684",
@@ -108,11 +94,11 @@
       "raw_generation": "C"
     },
     {
-      "id": "openbookqa_val_9-106",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Question: Plants need light for\nA) love\nB) glucose\nC) reading\nD) driving\nAnswer:",
-      "raw_generation": "A"
+      "id": "openbookqa_val_9-1126",
+      "gold": "C",
+      "pred": "B",
+      "prompt": "Question: Dew is formed when what condenses?\nA) carbon dioxide\nB) warm air\nC) H2O haze\nD) oxygen\nAnswer:",
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_9-900",
@@ -122,11 +108,11 @@
       "raw_generation": "D"
     },
     {
-      "id": "openbookqa_val_7-1139",
-      "gold": "C",
-      "pred": "D",
-      "prompt": "Question: To have a positive impact of the environment\nA) use Styrofoam plates and bowls\nB) use more paper towels\nC) salvage plastic bottles instead of throwing them away\nD) drive a car that guzzles gas\nAnswer:",
-      "raw_generation": "D"
+      "id": "openbookqa_val_529",
+      "gold": "D",
+      "pred": "A",
+      "prompt": "Question: Taking shorter showers leads to\nA) water shortages for the local environment\nB) increased energy consumption by the water heater\nC) an empty water heater\nD) less energy used by the water heater\nAnswer:",
+      "raw_generation": "A"
     },
     {
       "id": "openbookqa_val_9-472",
@@ -138,15 +124,29 @@
     {
       "id": "openbookqa_val_7-606",
       "gold": "D",
-      "pred": "C",
+      "pred": "B",
       "prompt": "Question: Winter solstice occurs on a day when\nA) the sun is brightest\nB) the sun is eclipsed\nC) the moon is full\nD) the darkness is greatest\nAnswer:",
-      "raw_generation": "C"
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_230",
       "gold": "A",
       "pred": "D",
       "prompt": "Question: What boils at the boiling point?\nA) Kool-Aid\nB) Cotton\nC) Paper towel\nD) Hair\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_7-131",
+      "gold": "C",
+      "pred": "D",
+      "prompt": "Question: When vapor condenses overnight it often ends up on\nA) bees\nB) clothing\nC) rosebuds\nD) people\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_7-847",
+      "gold": "C",
+      "pred": "D",
+      "prompt": "Question: Which is a good source of nutrients for a mushroom?\nA) a trotting horse\nB) a roaring lion\nC) a cut peony\nD) a flying eagle\nAnswer:",
       "raw_generation": "D"
     }
   ]

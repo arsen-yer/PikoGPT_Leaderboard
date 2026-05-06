@@ -17,25 +17,25 @@
       "benchmark": "hellaswag",
       "data": "leaderboard/benchmarks/hellaswag/cleaned/validation.jsonl",
       "total": 100,
-      "correct": 24,
+      "correct": 27,
       "invalid": 0,
-      "accuracy_pct": 24.0
+      "accuracy_pct": 27.0
     },
     {
       "benchmark": "winogrande",
       "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
       "total": 100,
-      "correct": 50,
+      "correct": 49,
       "invalid": 0,
-      "accuracy_pct": 50.0
+      "accuracy_pct": 49.0
     },
     {
       "benchmark": "openbookqa",
       "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
       "total": 100,
-      "correct": 21,
+      "correct": 23,
       "invalid": 0,
-      "accuracy_pct": 21.0
+      "accuracy_pct": 23.0
     },
     {
       "benchmark": "lambada",
