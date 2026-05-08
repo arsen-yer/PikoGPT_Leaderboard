@@ -1,41 +1,34 @@
 {
   "benchmark": "openbookqa",
   "submission": "DropOuters_AltynOrda",
-  "checkpoint": "/Users/retr0/University/NLP/PikoGPT_Leaderboard/Submissions/DropOuters_AltynOrda/model/best_model.pt",
-  "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
+  "checkpoint": "C:\\Users\\JustS\\OneDrive\\Документы\\University Projects\\NLP\\PikoGPT_Leaderboard\\Submissions\\DropOuters_AltynOrda\\model\\best_model.pt",
+  "data": "leaderboard\\benchmarks\\openbookqa\\cleaned\\validation.jsonl",
   "limit": 100,
   "total": 100,
-  "correct": 23,
+  "correct": 40,
   "invalid": 0,
-  "accuracy_pct": 23.0,
+  "accuracy_pct": 40.0,
   "wrong_examples": [
-    {
-      "id": "openbookqa_val_8-376",
-      "gold": "A",
-      "pred": "C",
-      "prompt": "Question: Frilled sharks and angler fish live far beneath the surface of the ocean, which is why they are known as\nA) Deep sea animals\nB) fish\nC) Long Sea Fish\nD) Far Sea Animals\nAnswer:",
-      "raw_generation": "C"
-    },
     {
       "id": "openbookqa_val_7-57",
       "gold": "D",
-      "pred": "C",
+      "pred": "B",
       "prompt": "Question: Gas can fill any container it is given, and liquid\nA) is standard weight and size\nB) is the opposite of variable\nC) only needs a few\nD) uses what it needs\nAnswer:",
-      "raw_generation": "C"
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_7-1024",
       "gold": "A",
-      "pred": "B",
+      "pred": "C",
       "prompt": "Question: When birds migrate south for the winter, they do it because\nA) they are genetically called to\nB) their children ask for them to\nC) it is important to their happiness\nD) they decide to each year\nAnswer:",
-      "raw_generation": "B"
+      "raw_generation": "C"
     },
     {
-      "id": "openbookqa_val_1953",
+      "id": "openbookqa_val_9-241",
       "gold": "D",
-      "pred": "A",
-      "prompt": "Question: Which organism cannot specialize?\nA) mammal\nB) plant\nC) fish\nD) protozoa\nAnswer:",
-      "raw_generation": "A"
+      "pred": "B",
+      "prompt": "Question: An example of lots kinetic energy would be\nA) Drinking a cold glass of water\nB) A snail moving across the sidewalk\nC) sitting without moving anywhere\nD) An aircraft taking a trip\nAnswer:",
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_7-97",
@@ -45,25 +38,11 @@
       "raw_generation": "B"
     },
     {
-      "id": "openbookqa_val_142",
-      "gold": "D",
-      "pred": "B",
-      "prompt": "Question: Which describes the size of an object?\nA) It attracts all metals\nB) It is a sphere\nC) It is red and purple\nD) It holds 500 mL of water\nAnswer:",
-      "raw_generation": "B"
-    },
-    {
-      "id": "openbookqa_val_7-921",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Question: A body may find its temperature to be lowered after\nA) water is heated up\nB) fluid spreads from pores\nC) the air becomes arid\nD) the sky stays bright\nAnswer:",
-      "raw_generation": "A"
-    },
-    {
       "id": "openbookqa_val_8-22",
       "gold": "B",
-      "pred": "C",
+      "pred": "D",
       "prompt": "Question: If a person enjoys long, sunny days their favorite month would be\nA) October\nB) July\nC) April\nD) March\nAnswer:",
-      "raw_generation": "C"
+      "raw_generation": "D"
     },
     {
       "id": "openbookqa_val_9-1039",
@@ -80,46 +59,46 @@
       "raw_generation": "A"
     },
     {
-      "id": "openbookqa_val_7-684",
-      "gold": "D",
-      "pred": "B",
-      "prompt": "Question: Oil is a nonrenewable resource which tells us that when\nA) it can be remade\nB) it can be found in other places\nC) there is an endless supply\nD) the final barrel is gone, there supply is finished\nAnswer:",
-      "raw_generation": "B"
-    },
-    {
       "id": "openbookqa_val_8-9",
       "gold": "A",
-      "pred": "C",
-      "prompt": "Question: Magma contains\nA) particles of iron\nB) Loads of leaves\nC) Soda\nD) Silly Putty\nAnswer:",
-      "raw_generation": "C"
-    },
-    {
-      "id": "openbookqa_val_9-1126",
-      "gold": "C",
       "pred": "B",
-      "prompt": "Question: Dew is formed when what condenses?\nA) carbon dioxide\nB) warm air\nC) H2O haze\nD) oxygen\nAnswer:",
+      "prompt": "Question: Magma contains\nA) particles of iron\nB) Loads of leaves\nC) Soda\nD) Silly Putty\nAnswer:",
       "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_9-900",
       "gold": "A",
-      "pred": "D",
+      "pred": "B",
       "prompt": "Question: Tunnels\nA) lead to less impacted soil\nB) pact down soil to make it denser\nC) firm up the ground\nD) help prevent the effects of erosion\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "openbookqa_val_9-902",
+      "gold": "D",
+      "pred": "C",
+      "prompt": "Question: A fire starts in a wide, open field and catches onto a forest. The fire started even though people were far away from the woods. A potential cause for the start of it could have been\nA) wind\nB) sand\nC) stones\nD) storms\nAnswer:",
+      "raw_generation": "C"
+    },
+    {
+      "id": "openbookqa_val_7-1139",
+      "gold": "C",
+      "pred": "D",
+      "prompt": "Question: To have a positive impact of the environment\nA) use Styrofoam plates and bowls\nB) use more paper towels\nC) salvage plastic bottles instead of throwing them away\nD) drive a car that guzzles gas\nAnswer:",
       "raw_generation": "D"
     },
     {
       "id": "openbookqa_val_529",
       "gold": "D",
-      "pred": "A",
+      "pred": "B",
       "prompt": "Question: Taking shorter showers leads to\nA) water shortages for the local environment\nB) increased energy consumption by the water heater\nC) an empty water heater\nD) less energy used by the water heater\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "B"
     },
     {
       "id": "openbookqa_val_9-472",
       "gold": "B",
-      "pred": "A",
+      "pred": "D",
       "prompt": "Question: plant requires what for photosynthesis\nA) light that changes color\nB) light from our closest star\nC) the reflection of something shiny\nD) light reflected from our orbiting rock\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "D"
     },
     {
       "id": "openbookqa_val_7-606",
@@ -129,24 +108,45 @@
       "raw_generation": "B"
     },
     {
-      "id": "openbookqa_val_230",
-      "gold": "A",
-      "pred": "D",
-      "prompt": "Question: What boils at the boiling point?\nA) Kool-Aid\nB) Cotton\nC) Paper towel\nD) Hair\nAnswer:",
-      "raw_generation": "D"
-    },
-    {
-      "id": "openbookqa_val_7-131",
-      "gold": "C",
-      "pred": "D",
-      "prompt": "Question: When vapor condenses overnight it often ends up on\nA) bees\nB) clothing\nC) rosebuds\nD) people\nAnswer:",
-      "raw_generation": "D"
-    },
-    {
       "id": "openbookqa_val_7-847",
       "gold": "C",
-      "pred": "D",
+      "pred": "A",
       "prompt": "Question: Which is a good source of nutrients for a mushroom?\nA) a trotting horse\nB) a roaring lion\nC) a cut peony\nD) a flying eagle\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_1981",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Alligators\nA) eat gar\nB) eat only foliage\nC) have live births\nD) are warm-blooded\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_670",
+      "gold": "D",
+      "pred": "A",
+      "prompt": "Question: What might occur during an experiment\nA) severe oxygen depletion in the atmosphere\nB) layers of the ozone disintegrating\nC) midterm exams for math class\nD) solution overflowing from a beaker\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_7-915",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Question: Frogs are unable to give live birth, and their eggs are soft, unlike other eggs, in fact\nA) frog eggs are sour\nB) frog eggs are transparent\nC) frog eggs are yellow\nD) frog eggs are hollow\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "openbookqa_val_7-512",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Cocoon creation occurs\nA) after the caterpillar stage\nB) after the chrysalis stage\nC) after the eggs are laid\nD) after the cocoon emerging stage\nAnswer:",
+      "raw_generation": "D"
+    },
+    {
+      "id": "openbookqa_val_353",
+      "gold": "A",
+      "pred": "D",
+      "prompt": "Question: Where would animals shiver the most?\nA) Arctic Circle\nB) Sumatra\nC) Java\nD) tropical rainforest\nAnswer:",
       "raw_generation": "D"
     }
   ]

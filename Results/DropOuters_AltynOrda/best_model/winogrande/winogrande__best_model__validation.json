@@ -1,33 +1,26 @@
 {
   "benchmark": "winogrande",
   "submission": "DropOuters_AltynOrda",
-  "checkpoint": "/Users/retr0/University/NLP/PikoGPT_Leaderboard/Submissions/DropOuters_AltynOrda/model/best_model.pt",
-  "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
+  "checkpoint": "C:\\Users\\JustS\\OneDrive\\Документы\\University Projects\\NLP\\PikoGPT_Leaderboard\\Submissions\\DropOuters_AltynOrda\\model\\best_model.pt",
+  "data": "leaderboard\\benchmarks\\winogrande\\cleaned\\validation.jsonl",
   "limit": 100,
   "total": 100,
-  "correct": 49,
+  "correct": 51,
   "invalid": 0,
-  "accuracy_pct": 49.0,
+  "accuracy_pct": 51.0,
   "wrong_examples": [
     {
-      "id": "winogrande_val_sha1_d1c6c847e784b027",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the easier cases.\nA) Sarah\nB) Maria\nAnswer:",
-      "raw_generation": "A"
-    },
-    {
-      "id": "winogrande_val_sha1_1550bebe18867e29",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Context: They were worried the wine would ruin the bed and the blanket, but the _ was't ruined.\nA) blanket\nB) bed\nAnswer:",
-      "raw_generation": "A"
-    },
-    {
-      "id": "winogrande_val_sha1_3e1136708a0a8fd0",
+      "id": "winogrande_val_sha1_2f4bc58e3059d2bd",
       "gold": "A",
       "pred": "B",
-      "prompt": "Context: At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.\nA) Jeffrey\nB) Hunter\nAnswer:",
+      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the harder cases.\nA) Sarah\nB) Maria\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_1607771d0cd27277",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Terry tried to bake the eggplant in the toaster oven but the _ was too big.\nA) eggplant\nB) toaster\nAnswer:",
       "raw_generation": "B"
     },
     {
@@ -35,6 +28,13 @@
       "gold": "B",
       "pred": "A",
       "prompt": "Context: The home that my parents had when I was in school was a lot nicer than my house now because the _ is trashy.\nA) home\nB) house\nAnswer:",
+      "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_48f4fd21327e5b8e",
+      "gold": "B",
+      "pred": "A",
+      "prompt": "Context: Natalie has a rich husband and lots of money, Jennifer is poor _ needs to make her clothes.\nA) Natalie\nB) Jennifer\nAnswer:",
       "raw_generation": "A"
     },
     {
@@ -52,11 +52,11 @@
       "raw_generation": "A"
     },
     {
-      "id": "winogrande_val_sha1_319931583a16dc2a",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper was due soon.\nA) cafe\nB) library\nAnswer:",
-      "raw_generation": "A"
+      "id": "winogrande_val_sha1_5d506eef87250da5",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper could wait.\nA) cafe\nB) library\nAnswer:",
+      "raw_generation": "B"
     },
     {
       "id": "winogrande_val_sha1_50f0eb514ab9a692",
@@ -66,31 +66,17 @@
       "raw_generation": "B"
     },
     {
-      "id": "winogrande_val_sha1_be7848c2c80374d5",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were new and perfect.\nA) Michael\nB) Leslie\nAnswer:",
-      "raw_generation": "A"
-    },
-    {
-      "id": "winogrande_val_sha1_0f85c72240301759",
+      "id": "winogrande_val_sha1_a168fee7eac7b74a",
       "gold": "A",
       "pred": "B",
-      "prompt": "Context: Leslie was nervous around parrots but Neil was not, since _ was bitten by a bird early in life.\nA) Leslie\nB) Neil\nAnswer:",
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were old and used.\nA) Michael\nB) Leslie\nAnswer:",
       "raw_generation": "B"
     },
     {
-      "id": "winogrande_val_sha1_f03cc93bcd29cb22",
+      "id": "winogrande_val_sha1_89b3bb1ca48ed829",
       "gold": "B",
       "pred": "A",
-      "prompt": "Context: To make frosting I needed pudding that was at a store 15 minutes away but pre-made frosting was at a store 5 minutes away. The _ was closer.\nA) pudding\nB) frosting\nAnswer:",
-      "raw_generation": "A"
-    },
-    {
-      "id": "winogrande_val_sha1_7de7f392ccecce02",
-      "gold": "B",
-      "pred": "A",
-      "prompt": "Context: Benjamin was chosen instead of Brett to be the makeup artist for the play because _ was less experienced.\nA) Benjamin\nB) Brett\nAnswer:",
+      "prompt": "Context: Cynthia violated the rights of Amy, because _ had too much passivity with other people.\nA) Cynthia\nB) Amy\nAnswer:",
       "raw_generation": "A"
     },
     {
@@ -101,10 +87,17 @@
       "raw_generation": "A"
     },
     {
-      "id": "winogrande_val_sha1_e7ec8863a6ef46b3",
+      "id": "winogrande_val_sha1_43680a0e88b685e4",
       "gold": "A",
       "pred": "B",
-      "prompt": "Context: The roof of Rachel's home is old and falling apart, while Betty's is new. The home value of _ is lower.\nA) Rachel\nB) Betty\nAnswer:",
+      "prompt": "Context: All the clutter in the house excited Leslie but not Derrick because cleaning energized _ very much.\nA) Leslie\nB) Derrick\nAnswer:",
+      "raw_generation": "B"
+    },
+    {
+      "id": "winogrande_val_sha1_ec4b0fa1357d0348",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Christine was going to Jessica's house to do some cleaning in the kitchen, because _ was a energetic person.\nA) Christine\nB) Jessica\nAnswer:",
       "raw_generation": "B"
     },
     {
@@ -129,10 +122,10 @@
       "raw_generation": "B"
     },
     {
-      "id": "winogrande_val_sha1_45db344076686177",
+      "id": "winogrande_val_sha1_6f16ae82714e5c80",
       "gold": "B",
       "pred": "A",
-      "prompt": "Context: I wanted to build a bathroom on the third floor of the house but I couldn't because the _ would be too full.\nA) bathroom\nB) floor\nAnswer:",
+      "prompt": "Context: Joel researched laws and helped to open a preschool for Eric. Because _ is very good with kids.\nA) Joel\nB) Eric\nAnswer:",
       "raw_generation": "A"
     },
     {
@@ -143,11 +136,18 @@
       "raw_generation": "B"
     },
     {
-      "id": "winogrande_val_sha1_907e2dacf022a072",
+      "id": "winogrande_val_sha1_0d7ff5206aa8f318",
       "gold": "B",
       "pred": "A",
-      "prompt": "Context: Angela thinks her husband might be cheating with Lindsey, and _ confesses at the dinner party.\nA) Angela\nB) Lindsey\nAnswer:",
+      "prompt": "Context: Donald's understanding of math isn't as good as Joseph's, so _ is more likely a professor.\nA) Donald\nB) Joseph\nAnswer:",
       "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_0af1a6645494e649",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Brian was jealous of Brett's new car because _ couldn't afford to buy a new car.\nA) Brian\nB) Brett\nAnswer:",
+      "raw_generation": "B"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "submission": "DropOuters_AltynOrda",
-  "submission_dir": "/Users/retr0/University/NLP/PikoGPT_Leaderboard/Submissions/DropOuters_AltynOrda",
-  "checkpoint": "/Users/retr0/University/NLP/PikoGPT_Leaderboard/Submissions/DropOuters_AltynOrda/model/best_model.pt",
+  "submission_dir": "C:\\Users\\JustS\\OneDrive\\Документы\\University Projects\\NLP\\PikoGPT_Leaderboard\\Submissions\\DropOuters_AltynOrda",
+  "checkpoint": "C:\\Users\\JustS\\OneDrive\\Документы\\University Projects\\NLP\\PikoGPT_Leaderboard\\Submissions\\DropOuters_AltynOrda\\model\\best_model.pt",
   "limit": 100,
-  "output_dir": "Results/DropOuters_AltynOrda/best_model",
-  "main_path": "/Users/retr0/University/NLP/PikoGPT_Leaderboard/Submissions/DropOuters_AltynOrda/main.py",
-  "python": "python",
+  "output_dir": "Results\\DropOuters_AltynOrda\\best_model",
+  "main_path": "C:\\Users\\JustS\\OneDrive\\Документы\\University Projects\\NLP\\PikoGPT_Leaderboard\\Submissions\\DropOuters_AltynOrda\\main.py",
+  "python": "C:\\Users\\JustS\\OneDrive\\Документы\\University Projects\\NLP\\PikoGPT_HSG\\.venv\\Scripts\\python.exe",
   "device": "auto",
   "temperature": 0.0,
   "seed": 0,
@@ -14,32 +14,8 @@
   "lambada_max_tokens": 5,
   "benchmarks": [
     {
-      "benchmark": "hellaswag",
-      "data": "leaderboard/benchmarks/hellaswag/cleaned/validation.jsonl",
-      "total": 100,
-      "correct": 27,
-      "invalid": 0,
-      "accuracy_pct": 27.0
-    },
-    {
-      "benchmark": "winogrande",
-      "data": "leaderboard/benchmarks/winogrande/cleaned/validation.jsonl",
-      "total": 100,
-      "correct": 49,
-      "invalid": 0,
-      "accuracy_pct": 49.0
-    },
-    {
-      "benchmark": "openbookqa",
-      "data": "leaderboard/benchmarks/openbookqa/cleaned/validation.jsonl",
-      "total": 100,
-      "correct": 23,
-      "invalid": 0,
-      "accuracy_pct": 23.0
-    },
-    {
       "benchmark": "lambada",
-      "data": "leaderboard/benchmarks/lambada/cleaned/test.jsonl",
+      "data": "leaderboard\\benchmarks\\lambada\\cleaned\\test.jsonl",
       "total": 100,
       "correct": 0,
       "invalid": 0,
