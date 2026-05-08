@@ -5,9 +5,9 @@
   "data": "leaderboard\\benchmarks\\hellaswag\\cleaned\\validation.jsonl",
   "limit": 100,
   "total": 100,
-  "correct": 32,
+  "correct": 33,
   "invalid": 0,
-  "accuracy_pct": 32.0,
+  "accuracy_pct": 33.0,
   "wrong_examples": [
     {
       "id": "hellaswag_val_activitynet_v_-JhWjGDPHMY_24",
@@ -94,13 +94,6 @@
       "raw_generation": "D"
     },
     {
-      "id": "hellaswag_val_activitynet_v_0hWGSkDnRHA_200",
-      "gold": "D",
-      "pred": "B",
-      "prompt": "Context: Two people are seen passing a ball back and fourth in a pool and leads into one speaking to the camera. the man\nA) dips the ball and walks back with the boy and pours detergent into a cup again.\nB) then throws the ball into the pool and begins running around with a sail in his hand while a group of men watch.\nC) then takes a drink having a conversation with another man and another man leads into him throwing balls in the water and laughing to the camera.\nD) demonstrates how to properly throw the ball with his hands while still speaking to the camera.\nAnswer:",
-      "raw_generation": "B"
-    },
-    {
       "id": "hellaswag_val_activitynet_v_15vwVfNA99o_225",
       "gold": "C",
       "pred": "B",
@@ -117,9 +110,9 @@
     {
       "id": "hellaswag_val_activitynet_v_1AZxtWKkRlo_246",
       "gold": "B",
-      "pred": "A",
+      "pred": "C",
       "prompt": "Context: A group of cheerleaders run onto a stage before a cheering audience. They get into formation, then begin dancing and flipping as male cheerleaders join them. they all\nA) dance and flip on stage while hanging their hats on the sides.\nB) continue dancing and flipping, doing hand springs.\nC) dance together with flip up their sleeves.\nD) perform their routines as the studio rashes to a halt with cheerleaders in the audience.\nAnswer:",
-      "raw_generation": "A"
+      "raw_generation": "C"
     },
     {
       "id": "hellaswag_val_activitynet_v_1AZxtWKkRlo_247",
@@ -148,6 +141,13 @@
       "pred": "B",
       "prompt": "Context: A black female is shown in a room with a black scarf around her head. Black spots on her faced are then zoomed in on and she begins to apply something on it. next\nA) , she begins to brush her lips and make painted lips look just like a lipstick to the camera and ends with her closing gift and instruction showing her off at the end.\nB) she is shown in various different locations and gets extremely close to a wall.\nC) , she is shown making multiple moans and sprays some kind of liquid down her face before hanging up.\nD) , she takes some spray and it makes her skin extremely oily and she continues to talk until the video is over.\nAnswer:",
       "raw_generation": "B"
+    },
+    {
+      "id": "hellaswag_val_activitynet_v_3HBAcaU552I_399",
+      "gold": "B",
+      "pred": "D",
+      "prompt": "Context: A young boy and girl are standing over a sink with their mother talking. The mother instructs them on how to brush their teeth while laughing. the boy\nA) puts a shirt on and rubs his mouth.\nB) helps his younger sister brush his teeth.\nC) walks with an empty mouthwash cup on a sink floor.\nD) and girl then begin working out.\nAnswer:",
+      "raw_generation": "D"
     }
   ]
 }

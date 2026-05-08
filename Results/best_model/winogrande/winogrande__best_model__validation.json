@@ -5,9 +5,9 @@
   "data": "leaderboard\\benchmarks\\winogrande\\cleaned\\validation.jsonl",
   "limit": 100,
   "total": 100,
-  "correct": 46,
+  "correct": 48,
   "invalid": 0,
-  "accuracy_pct": 46.0,
+  "accuracy_pct": 48.0,
   "wrong_examples": [
     {
       "id": "winogrande_val_sha1_d1c6c847e784b027",
@@ -15,13 +15,6 @@
       "pred": "A",
       "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the easier cases.\nA) Sarah\nB) Maria\nAnswer:",
       "raw_generation": "A"
-    },
-    {
-      "id": "winogrande_val_sha1_2f4bc58e3059d2bd",
-      "gold": "A",
-      "pred": "B",
-      "prompt": "Context: Sarah was a much better surgeon than Maria so _ always got the harder cases.\nA) Sarah\nB) Maria\nAnswer:",
-      "raw_generation": "B"
     },
     {
       "id": "winogrande_val_sha1_3e1136708a0a8fd0",
@@ -45,13 +38,6 @@
       "raw_generation": "B"
     },
     {
-      "id": "winogrande_val_sha1_dba4b667493ad1a9",
-      "gold": "A",
-      "pred": "B",
-      "prompt": "Context: I had to read an entire story for class tomorrow. Luckily, the _ was short.\nA) story\nB) class\nAnswer:",
-      "raw_generation": "B"
-    },
-    {
       "id": "winogrande_val_sha1_5d506eef87250da5",
       "gold": "A",
       "pred": "B",
@@ -64,6 +50,13 @@
       "pred": "A",
       "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were new and perfect.\nA) Michael\nB) Leslie\nAnswer:",
       "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_a168fee7eac7b74a",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were old and used.\nA) Michael\nB) Leslie\nAnswer:",
+      "raw_generation": "B"
     },
     {
       "id": "winogrande_val_sha1_0f85c72240301759",
@@ -148,6 +141,13 @@
       "pred": "A",
       "prompt": "Context: Donald's understanding of math isn't as good as Joseph's, so _ is more likely a professor.\nA) Donald\nB) Joseph\nAnswer:",
       "raw_generation": "A"
+    },
+    {
+      "id": "winogrande_val_sha1_0af1a6645494e649",
+      "gold": "A",
+      "pred": "B",
+      "prompt": "Context: Brian was jealous of Brett's new car because _ couldn't afford to buy a new car.\nA) Brian\nB) Brett\nAnswer:",
+      "raw_generation": "B"
     }
   ]
 }

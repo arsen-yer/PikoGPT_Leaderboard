@@ -14,12 +14,36 @@
   "lambada_max_tokens": 5,
   "benchmarks": [
     {
+      "benchmark": "hellaswag",
+      "data": "leaderboard\\benchmarks\\hellaswag\\cleaned\\validation.jsonl",
+      "total": 100,
+      "correct": 33,
+      "invalid": 0,
+      "accuracy_pct": 33.0
+    },
+    {
+      "benchmark": "winogrande",
+      "data": "leaderboard\\benchmarks\\winogrande\\cleaned\\validation.jsonl",
+      "total": 100,
+      "correct": 48,
+      "invalid": 0,
+      "accuracy_pct": 48.0
+    },
+    {
+      "benchmark": "openbookqa",
+      "data": "leaderboard\\benchmarks\\openbookqa\\cleaned\\validation.jsonl",
+      "total": 100,
+      "correct": 42,
+      "invalid": 0,
+      "accuracy_pct": 42.0
+    },
+    {
       "benchmark": "lambada",
       "data": "leaderboard\\benchmarks\\lambada\\cleaned\\test.jsonl",
       "total": 100,
-      "correct": 0,
-      "invalid": 0,
-      "accuracy_pct": 0.0
+      "correct": 15,
+      "invalid": 5,
+      "accuracy_pct": 15.0
     }
   ]
 }
